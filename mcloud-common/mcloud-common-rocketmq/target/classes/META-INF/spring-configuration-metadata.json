@@ -1,0 +1,85 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties",
+      "name": "spring.rocketmq",
+      "type": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties",
+      "name": "spring.rocketmq.producer",
+      "type": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties",
+      "name": "spring.rocketmq.name-server-address",
+      "description": "nameServer 地址：端口号; 多个分号分割 127.0.0.1:9876;192.168.10.1:9876",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": 0,
+      "name": "spring.rocketmq.producer.compress-msg-body-over-howmuch",
+      "description": "压缩消息体的阀值，默认1024 * 4，4k，即默认大于4k的消息体将开启压缩",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": 0,
+      "name": "spring.rocketmq.producer.max-message-size",
+      "description": "消息体最大值，单位byte，默认4Mb",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "name": "spring.rocketmq.producer.producer-group",
+      "description": "生产组",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": false,
+      "name": "spring.rocketmq.producer.retry-another-broker-when-not-store-ok",
+      "description": "内部发送失败时是否重试另一个broker",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": 2,
+      "name": "spring.rocketmq.producer.retry-times-when-send-async-failed",
+      "description": "在异步模式下，声明发送失败之前内部执行的最大重试次数 这可能会导致消息重复，应用程序开发人员需要解决此问题",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": 2,
+      "name": "spring.rocketmq.producer.retry-times-when-send-failed",
+      "description": "在同步模式下，声明发送失败之前内部执行的最大重试次数 这可能会导致消息重复，应用程序开发人员需要解决此问题",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": 3000,
+      "name": "spring.rocketmq.producer.send-msg-timeout",
+      "description": "发送消息超时时间，单位毫秒，默认值3000",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": true,
+      "name": "spring.rocketmq.producer.trace-enabled",
+      "description": "跟踪消息使用者的切换：将消息使用者信息发送到主题：rmq_comm_TRACE_DATA",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.monkeyzi.mcloud.rocketmq.config.RocketMQProperties$Producer",
+      "defaultValue": false,
+      "name": "spring.rocketmq.producer.vip-channel-enabled",
+      "description": "是否vip通道，默认值false",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}
