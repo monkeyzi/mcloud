@@ -44,9 +44,9 @@ public class MQProducerTemplate {
 
     /**
      * 发送同步消息 带超时时间
-     * @param topic
-     * @param tag
-     * @param message
+     * @param topic   主题
+     * @param tag     tag
+     * @param message 消息
      * @param timeout
      * @return
      */
@@ -55,12 +55,40 @@ public class MQProducerTemplate {
         return send(topic,tag,msg,timeout);
     }
 
+
+    /**
+     * 同步发送消息
+     * @param topic    主题
+     * @param tag      标签
+     * @param message  消息体，Object类型
+     * @param header   消息头
+     * @return
+     */
+    public SendResult send(String topic, String tag, Object message, RocketMQHeader header) {
+        return send(topic, tag, message, header, producer.getSendMsgTimeout());
+    }
+    /**
+     * 同步发送消息
+     * @param topic     主题
+     * @param tag       标签
+     * @param message   消息体，Object类型
+     * @param header    消息头
+     * @param timeout   消息发送超时时间，单位毫秒
+     * @return
+     */
+    public SendResult send(String topic, String tag, Object message, RocketMQHeader header, int timeout) {
+        Message msg = convertMessage(topic, tag, message, header);
+        return send(topic,tag,msg,timeout);
+    }
+
+
+
     /**
      * 发送消息
-     * @param topic
-     * @param tag
-     * @param msg
-     * @param timeout
+     * @param topic   主题
+     * @param tag     tag
+     * @param msg     消息
+     * @param timeout 超时时间
      * @return
      */
     private SendResult send(String topic, String tag, Message msg, int timeout) {

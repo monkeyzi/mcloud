@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.monkeyzi.mcloud.rocketmq.config.MQBaseAutoConfiguration,\
-  com.monkeyzi.mcloud.rocketmq.config.MQProducerAutoConfiguration
+  com.monkeyzi.mcloud.rocketmq.config.MQProducerAutoConfiguration,\
+  com.monkeyzi.mcloud.rocketmq.config.MQConsumerAutoConfiguration

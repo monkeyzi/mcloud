@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41800da1-1b06-45d4-aec4-70fb45cf8dc4" name="Default" comment="" />
+    <list default="true" id="41800da1-1b06-45d4-aec4-70fb45cf8dc4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQPushConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/MessageExtConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties$Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties$Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/classes/com/monkeyzi/mcloud/rocketmq/core/producer/RocketMQTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcloud-upms/target/classes/com/monkeyzi/mcloud/upms/web/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-upms/target/classes/com/monkeyzi/mcloud/upms/web/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/mcloud-common/mcloud-common-utils/target/" />
     <ignored path="$PROJECT_DIR$/mcloud-api/target/" />
     <ignored path="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/" />
@@ -18,44 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MQBaseAutoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MQConsumerAutoConfiguration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MQConsumerAutoConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1975">
+              <caret line="101" column="84" lean-forward="true" selection-start-line="101" selection-start-column="84" selection-end-line="101" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring.factories" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories">
+      <file leaf-file-name="AbsMQConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RocketMQHeader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/RocketMQHeader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="1392">
+              <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,35 +64,53 @@
       <file leaf-file-name="MQProducerTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="100">
+              <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketMQConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java">
+      <file leaf-file-name="MQProducer.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/MQProducer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="275">
+              <caret line="45" column="84" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java">
+      <file leaf-file-name="DefaultMQProducer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/DefaultMQProducer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="25">
+              <caret line="168" column="60" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MQProducerAutoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.java">
+      <file leaf-file-name="MessageQueueSelector.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/MessageQueueSelector.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbsMQPushConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQPushConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1150">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,23 +118,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketMQProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties.java">
+      <file leaf-file-name="RocketMQConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-703">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="325">
+              <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mcloud-upms/pom.xml">
+      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="350">
+              <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -132,6 +147,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -142,21 +160,26 @@
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/RocketMqProperties.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQMessageListener.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/enums/ConsumeMode.java" />
-        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQTranscationTemplate.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/RocketMQHeader.java" />
-        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories" />
         <option value="$PROJECT_DIR$/mcloud-upms/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/UpmsApplication.java" />
         <option value="$PROJECT_DIR$/mcloud-upms/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/RocketMQTemplate.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbMQConsumer.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java" />
         <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/MessageExtConst.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQConsumer.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQPushConsumer.java" />
+        <option value="$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java" />
+        <option value="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java" />
       </list>
     </option>
   </component>
@@ -198,11 +221,12 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1383" />
-    <option name="height" value="745" />
+    <option name="x" value="-78" />
+    <option name="y" value="36" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
@@ -272,6 +296,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-common-rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,6 +361,81 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="upms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="mcloud-upms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="upms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.rocketmq:rocketmq-client:4.3.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.rocketmq:rocketmq-client:4.3.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="rocketmq-client-4.3.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.rocketmq:rocketmq-client:4.3.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="rocketmq-client-4.3.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.rocketmq:rocketmq-client:4.3.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="rocketmq-client-4.3.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,18 +615,19 @@
       <workItem from="1552960914827" duration="320000" />
       <workItem from="1552961310752" duration="19684000" />
       <workItem from="1553000307529" duration="2458000" />
+      <workItem from="1553044933291" duration="12990000" />
+      <workItem from="1553069050119" duration="9922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26483000" />
+    <option name="totallyTimeSpent" value="49395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.112660944" side_tool="true" weight="0.42898974" />
       <window_info anchor="right" id="Maven Projects" order="0" weight="0.46946564" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
@@ -526,33 +637,34 @@
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.6954612" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.8630849" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32990867" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32928944" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" weight="0.32990867" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32990867" />
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.88733906" weight="0.5355286" />
       <window_info anchor="bottom" id="Spring" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49785408" weight="0.39688042" />
-      <window_info content_ui="combo" id="Project" order="7" weight="0.4500675" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49785408" weight="0.47833622" />
+      <window_info content_ui="combo" id="Project" order="7" weight="0.4496183" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32977098" />
       <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="right" id="BPMNPalette" order="6" weight="0.3299356" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="14" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info id="BPMN Editor" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="BPMNPalette" order="6" weight="0.3299356" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.46740332" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32990867" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info id="BPMN Editor" order="3" weight="0.3299356" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +675,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -573,7 +685,6 @@
           <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1334">
           <caret line="57" column="55" lean-forward="true" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,15 +716,11 @@
           <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="9" column="74" lean-forward="true" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,15 +852,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/enums/ConsumeMode.java" />
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQTranscationTemplate.java" />
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/EnableMonkeyziRocketMQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -764,76 +860,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/UpmsApplication.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/resources/application.yml" />
     <entry file="file://$PROJECT_DIR$/mcloud-upms/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="975">
           <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/RocketMQHeader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="275">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,18 +879,161 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/RocketMQProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="250">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQBaseAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/consumer/DefaultMQPushConsumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQProducerAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/UpmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="90" column="25" selection-start-line="86" selection-start-column="11" selection-end-line="90" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-common/4.3.0/rocketmq-common-4.3.0.jar!/org/apache/rocketmq/common/message/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="162" column="5" lean-forward="true" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+          <folding>
+            <element signature="e#4205#4206#0" expanded="true" />
+            <element signature="e#4243#4244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/message/MessageExtConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="58" column="66" lean-forward="true" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/enums/ConsumeMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/annotation/RocketMQConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQPushConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-upms/src/main/java/com/monkeyzi/mcloud/upms/web/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="1975">
+          <caret line="101" column="84" lean-forward="true" selection-start-line="101" selection-start-column="84" selection-end-line="101" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/consumer/AbsMQConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/MessageQueueSelector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/DefaultMQProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="168" column="60" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/core/producer/MQProducerTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0.jar!/org/apache/rocketmq/client/producer/MQProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="45" column="84" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="84" />
         </state>
       </provider>
     </entry>

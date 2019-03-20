@@ -54,13 +54,9 @@ public @interface RocketMQConsumer {
      */
     int consumeThreadMax() default 64;
 
-    /**
-     * 最大批量消费大小，默认1
-     */
-    int consumeMessageBatchMaxSize() default 1;
 
     /**
-     * 最大重复消费次数，默认3
+     * 最大重复消费次数，默认2
      */
     int maxReconsumeTime() default 2;
 }
