@@ -28,8 +28,9 @@ import java.util.UUID;
 @Configuration
 @ConditionalOnBean(MQBaseAutoConfiguration.class)
 public class MQConsumerAutoConfiguration  extends MQBaseAutoConfiguration{
-
-    //维护一份map用于检测是否用同样的consumerGroup订阅了不同的topic+tag
+    /**
+     * 维护一份map用于检测是否用同样的consumerGroup订阅了不同的topic+tag
+     */
     private Map<String,String> validConsumerMap;
 
     @PostConstruct
