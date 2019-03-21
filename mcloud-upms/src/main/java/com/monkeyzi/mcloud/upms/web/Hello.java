@@ -1,4 +1,4 @@
-package com.monkeyzi.mcloud.eureka.web;
+package com.monkeyzi.mcloud.upms.web;
 
 import com.monkeyzi.mcloud.rocketmq.annotation.RocketMQConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.consumer.AbsMQPushConsumer;

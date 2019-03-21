@@ -1,4 +1,4 @@
-package com.monkeyzi.mcloud.eureka.web;
+package com.monkeyzi.mcloud.upms.web;
 
 import com.monkeyzi.mcloud.rocketmq.annotation.MQTransactionProducer;
 import com.monkeyzi.mcloud.rocketmq.core.producer.AbstractMQTransactionProducer;
