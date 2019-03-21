@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41800da1-1b06-45d4-aec4-70fb45cf8dc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java" afterDir="false" />
-    </list>
+    <list default="true" id="41800da1-1b06-45d4-aec4-70fb45cf8dc4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/mcloud-common/mcloud-common-utils/target/" />
     <ignored path="$PROJECT_DIR$/mcloud-api/target/" />
     <ignored path="$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/target/" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="MQConsumerAutoConfiguration.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
+            <state relative-caret-position="2262">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -157,7 +155,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1384" />
+    <option name="width" value="1385" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -457,12 +455,12 @@
       <workItem from="1553000307529" duration="2458000" />
       <workItem from="1553044933291" duration="12990000" />
       <workItem from="1553069050119" duration="9922000" />
-      <workItem from="1553089066073" duration="1659000" />
+      <workItem from="1553089066073" duration="1690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51054000" />
+    <option name="totallyTimeSpent" value="51085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -871,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mcloud-common/mcloud-common-rocketmq/src/main/java/com/monkeyzi/mcloud/rocketmq/config/MQConsumerAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
+        <state relative-caret-position="2262">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
