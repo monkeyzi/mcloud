@@ -23,19 +23,22 @@ public abstract class AbsMQConsumer<T> {
      * @return
      */
     protected  T parseMessage(MessageExt msg){
+
         if (msg==null||msg.getBody()==null){
             return null;
         }
         final Type type=getMessageType();
-        if (type instanceof Class){
-            try {
-               T data=gson.fromJson(new String(msg.getBody()),type);
-               return data;
-            }catch (Exception e){
-                log.error("parse message json fail : {}", e.getMessage());
+
+        try {
+            T data;
+            if (type.getTypeName().equals("java.lang.String")){
+                data= (T) new String(msg.getBody(),"UTF-8");
+            }else {
+                data=gson.fromJson(new String(msg.getBody(),"UTF-8"),type);
             }
-        }else {
-            log.warn("Parse msg error. {}", msg);
+            return data;
+        }catch (Exception e){
+            log.error("parse message json fail : {}", e.getMessage());
         }
         return null;
     }
