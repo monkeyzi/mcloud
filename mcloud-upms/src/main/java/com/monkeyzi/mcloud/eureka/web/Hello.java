@@ -1,24 +1,18 @@
-package com.monkeyzi.mcloud.upms.web;
+package com.monkeyzi.mcloud.eureka.web;
 
-import com.alibaba.fastjson.JSONObject;
 import com.monkeyzi.mcloud.rocketmq.annotation.RocketMQConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.consumer.AbsMQPushConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.producer.MQProducerTemplate;
 import com.monkeyzi.mcloud.rocketmq.enums.ConsumeMode;
 import com.monkeyzi.mcloud.rocketmq.message.MessageExtConst;
-import org.apache.rocketmq.client.producer.MessageQueueSelector;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 @RestController

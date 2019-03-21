@@ -1,4 +1,4 @@
-package com.monkeyzi.mcloud.upms;
+package com.monkeyzi.mcloud.eureka;
 
 import com.monkeyzi.mcloud.rocketmq.annotation.EnableMonkeyziRocketMQ;
 import org.springframework.boot.SpringApplication;
