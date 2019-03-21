@@ -8,8 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Map;
 
 @Slf4j
-@RocketMQConsumer(consumerGroup = "transcation-group",topic = "TopicTest1234",consumeMode = ConsumeMode.ORDERLY)
-public class Transcation extends AbsMQPushConsumer<String> {
+@RocketMQConsumer(consumerGroup = "transaction-group",topic = "TopicTest1234",consumeMode = ConsumeMode.ORDERLY)
+public class Transaction extends AbsMQPushConsumer<String> {
     @Override
     public boolean process(String message, Map<String, Object> msgExtMap) {
         System.out.println("事务消息:"+message);

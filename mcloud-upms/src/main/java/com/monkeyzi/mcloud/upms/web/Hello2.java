@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Slf4j
 @RestController
-@MQTransactionProducer(producerGroup = "transcation-group")
+@MQTransactionProducer(producerGroup = "transaction-group")
 public class Hello2  extends AbstractMQTransactionProducer {
 
     private AtomicInteger transactionIndex = new AtomicInteger(0);
@@ -32,7 +32,7 @@ public class Hello2  extends AbstractMQTransactionProducer {
                 Message msg =
                         new Message("TopicTest1234", tags[i % 2], "KEY" + i,
                                 ("Hello RocketMQ"+i).getBytes(RemotingHelper.DEFAULT_CHARSET));
-                SendResult sendResult = sendTranscationMessage(msg,null);
+                SendResult sendResult = sendTransactionMessage(msg,null);
                 System.out.printf("%s%n", sendResult);
             } catch (Exception e) {
                 e.printStackTrace();

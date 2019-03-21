@@ -23,7 +23,7 @@ public abstract class AbstractMQTransactionProducer implements TransactionListen
     }
 
 
-    public SendResult sendTranscationMessage(Message msg, Object obj){
+    public SendResult sendTransactionMessage(Message msg, Object obj){
         try {
             SendResult sendResult = transactionProducer.sendMessageInTransaction(msg, obj);
             if(sendResult.getSendStatus() != SendStatus.SEND_OK) {

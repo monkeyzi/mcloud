@@ -31,6 +31,7 @@ public abstract class AbsMQConsumer<T> {
 
         try {
             T data;
+            //解决字符串 空格报错
             if (type.getTypeName().equals("java.lang.String")){
                 data= (T) new String(msg.getBody(),"UTF-8");
             }else {
