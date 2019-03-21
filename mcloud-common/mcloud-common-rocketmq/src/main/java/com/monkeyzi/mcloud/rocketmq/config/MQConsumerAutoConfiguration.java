@@ -76,7 +76,7 @@ public class MQConsumerAutoConfiguration  extends MQBaseAutoConfiguration{
             String exist = validConsumerMap.get(consumerGroup);
             throw new RuntimeException("消费组重复订阅，请新增消费组用于新的topic和tag组合: " + consumerGroup + "已经订阅了" + exist);
          } else {
-            validConsumerMap.put(consumerGroup, topic + "-" + tags);
+            validConsumerMap.put(consumerGroup+topic, topic + "-" + tags);
          }
          //配置push consumer
          if (AbsMQPushConsumer.class.isAssignableFrom(bean.getClass())){

@@ -4,7 +4,11 @@ import com.monkeyzi.mcloud.rocketmq.annotation.RocketMQConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.consumer.AbsMQPushConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.producer.MQProducerTemplate;
 import com.monkeyzi.mcloud.rocketmq.enums.ConsumeMode;
+import com.monkeyzi.mcloud.rocketmq.message.MessageExtConst;
+import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
+import org.apache.rocketmq.common.message.Message;
+import org.apache.rocketmq.remoting.common.RemotingHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RocketMQConsumer(consumerGroup = "my-producer-group",topic = "hello",tag = "key",consumeMode = ConsumeMode.ORDERLY)
+@RocketMQConsumer(consumerGroup = "my-producer-group",topic = "hello",consumeMode = ConsumeMode.ORDERLY)
 public class Hello  extends AbsMQPushConsumer<String> {
 
     @Autowired
@@ -20,17 +24,49 @@ public class Hello  extends AbsMQPushConsumer<String> {
 
 
     @RequestMapping(value = "/test")
-    public void test(){
-        for (int i=0;i<10;i++){
-            SendResult send = rocketMQTemplate.send("hello", "key", "你好"+i);
-            System.out.println(send);
+    public void test() throws Exception {
+
+
+       String[] tags = new String[]{"创建订单", "支付", "发货", "收货", "五星好评"};
+
+        for (int i = 5; i < 25; i++) {
+            String orderId = i / 5+"";
+            Message msg = new Message("hello", tags[i % tags.length], "uniqueId:" + i,
+                    ("order_"+ orderId +"" +tags[i % tags.length]).getBytes(RemotingHelper.DEFAULT_CHARSET));
+            rocketMQTemplate.asyncSendOrderly(msg,orderId, new SendCallback() {
+                @Override
+                public void onSuccess(SendResult sendResult) {
+                    System.out.println(orderId+":"+sendResult);
+                }
+
+                @Override
+                public void onException(Throwable throwable) {
+
+                }
+            });
         }
+       /* JSONObject json=new JSONObject();
+        json.put("name","gaoyanguo");
+        rocketMQTemplate.asyncSend("hh", "list", json, new SendCallback() {
+            @Override
+            public void onSuccess(SendResult sendResult) {
+                System.out.println(sendResult.getSendStatus()+""+sendResult.getMsgId());
+            }
+
+            @Override
+            public void onException(Throwable e) {
+                     e.printStackTrace();
+            }
+        });*/
 
     }
 
+
     @Override
-    public boolean process(String message, Map msgExtMap) {
-        System.out.println("消费消息："+message);
+    public boolean process(String message, Map<String, Object> msgExtMap) {
+        System.out.println("消费消息"+message +"------msgId"+
+                msgExtMap.get(MessageExtConst.PROPERTY_EXT_MSG_ID)+"===="
+                +msgExtMap.get(MessageExtConst.PROPERTY_EXT_QUEUE_ID));
         return true;
     }
 }
