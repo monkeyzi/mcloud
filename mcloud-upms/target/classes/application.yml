@@ -1,9 +1,0 @@
-
-spring:
-  rocketmq:
-    name-server-address: 127.0.0.1:9876
-    producer:
-      producer-group: my-producer-group
-      vip-channel-enabled: false
-server:
-  port: 8989
