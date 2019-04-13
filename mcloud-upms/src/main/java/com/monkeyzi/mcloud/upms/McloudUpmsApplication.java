@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableMonkeyziRocketMQ
-public class UpmsApplication {
+public class McloudUpmsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UpmsApplication.class);
+        SpringApplication.run(McloudUpmsApplication.class);
     }
 }

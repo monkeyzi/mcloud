@@ -13,6 +13,10 @@
         <module>mcloud-api</module>
         <module>mcloud-eureka</module>
         <module>mcloud-upms</module>
+        <module>mcloud-gateway</module>
+        <module>mcloud-config</module>
+        <module>mcloud-quartz</module>
+        <module>mcloud-msg</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +29,9 @@
         <lombok.version>1.18.6</lombok.version>
         <fastjson.version>1.2.54</fastjson.version>
         <gson.version>2.8.5</gson.version>
+        <mysql.connector.version>8.0.15</mysql.connector.version>
+        <mybatis.plus.version>3.1.0</mybatis.plus.version>
+        <druid.starter.version>1.1.16</druid.starter.version>
     </properties>
 
     <dependencies>
@@ -45,7 +52,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
-
+        <!--测试依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <!--依赖-->
     <dependencyManagement>
@@ -71,6 +83,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--web 模块-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+                <exclusions>
+                    <!--排除tomcat依赖-->
+                    <exclusion>
+                        <artifactId>spring-boot-starter-tomcat</artifactId>
+                        <groupId>org.springframework.boot</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
             <!--rocketmq-->
             <dependency>
                 <groupId>org.apache.rocketmq</groupId>
@@ -89,7 +114,24 @@
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
             </dependency>
-
+            <!--mysql-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+            <!--mybatis plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <!--druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.starter.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
