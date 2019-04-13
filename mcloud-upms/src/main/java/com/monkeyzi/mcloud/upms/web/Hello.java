@@ -5,6 +5,7 @@ import com.monkeyzi.mcloud.rocketmq.core.consumer.AbsMQPushConsumer;
 import com.monkeyzi.mcloud.rocketmq.core.producer.MQProducerTemplate;
 import com.monkeyzi.mcloud.rocketmq.enums.ConsumeMode;
 import com.monkeyzi.mcloud.rocketmq.message.MessageExtConst;
+import com.monkeyzi.mcloud.rocketmq.message.RocketMQHeader;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RocketMQConsumer(consumerGroup = "my-producer-group",topic = "hello",consumeMode = ConsumeMode.ORDERLY)
+@RocketMQConsumer(consumerGroup = "my-producer-group",topic = "hello",tag = "order",consumeMode = ConsumeMode.ORDERLY)
 public class Hello  extends AbsMQPushConsumer<String> {
 
     @Autowired
@@ -25,9 +26,11 @@ public class Hello  extends AbsMQPushConsumer<String> {
 
     @RequestMapping(value = "/test")
     public void test() throws Exception {
-
-
-       String[] tags = new String[]{"创建订单", "支付", "发货", "收货", "五星好评"};
+        RocketMQHeader header=new RocketMQHeader();
+        header.setKeys("kkk");
+        final SendResult send = rocketMQTemplate.send("hello", "order", "wowowo", header);
+        System.out.println(send);
+      /* String[] tags = new String[]{"创建订单", "支付", "发货", "收货", "五星好评"};
 
         for (int i = 5; i < 25; i++) {
             String orderId = i / 5+"";
@@ -44,20 +47,8 @@ public class Hello  extends AbsMQPushConsumer<String> {
 
                 }
             });
-        }
-       /* JSONObject json=new JSONObject();
-        json.put("name","gaoyanguo");
-        rocketMQTemplate.asyncSend("hh", "list", json, new SendCallback() {
-            @Override
-            public void onSuccess(SendResult sendResult) {
-                System.out.println(sendResult.getSendStatus()+""+sendResult.getMsgId());
-            }
+        }*/
 
-            @Override
-            public void onException(Throwable e) {
-                     e.printStackTrace();
-            }
-        });*/
 
     }
 
