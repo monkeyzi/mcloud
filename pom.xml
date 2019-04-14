@@ -32,9 +32,11 @@
         <mysql.connector.version>8.0.15</mysql.connector.version>
         <mybatis.plus.version>3.1.0</mybatis.plus.version>
         <druid.starter.version>1.1.16</druid.starter.version>
+        <hutool.vsersion>4.5.5</hutool.vsersion>
     </properties>
 
     <dependencies>
+
         <!--配置文件处理器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -131,6 +133,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.starter.version}</version>
+            </dependency>
+            <!--hutool-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.vsersion}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

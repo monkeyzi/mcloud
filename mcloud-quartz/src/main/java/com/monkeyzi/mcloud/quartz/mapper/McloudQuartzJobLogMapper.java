@@ -1,7 +1,8 @@
 package com.monkeyzi.mcloud.quartz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.monkeyzi.mcloud.quartz.entity.QuartzTest;
+import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
+import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJobLog;
 
 /**
  * @author: 高yg
@@ -10,5 +11,5 @@ import com.monkeyzi.mcloud.quartz.entity.QuartzTest;
  * @blog http://www.monkeyzi.xin
  * @description:
  */
-public interface QuartzTestMapper extends BaseMapper<QuartzTest> {
+public interface McloudQuartzJobLogMapper extends BaseMapper<McloudQuartzJobLog> {
 }

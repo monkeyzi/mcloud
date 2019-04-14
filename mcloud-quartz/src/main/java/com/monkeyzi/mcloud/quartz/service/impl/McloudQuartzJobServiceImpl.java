@@ -1,9 +1,9 @@
 package com.monkeyzi.mcloud.quartz.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.monkeyzi.mcloud.quartz.entity.QuartzTest;
-import com.monkeyzi.mcloud.quartz.mapper.QuartzTestMapper;
-import com.monkeyzi.mcloud.quartz.service.QuartzTestService;
+import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
+import com.monkeyzi.mcloud.quartz.mapper.McloudQuartzJobMapper;
+import com.monkeyzi.mcloud.quartz.service.McloudQuartzJobService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +16,5 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-public class QuartzTestServiceImpl extends ServiceImpl<QuartzTestMapper,QuartzTest> implements QuartzTestService {
+public class McloudQuartzJobServiceImpl extends ServiceImpl<McloudQuartzJobMapper,McloudQuartzJob> implements McloudQuartzJobService {
 }

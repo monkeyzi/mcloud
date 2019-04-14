@@ -1,7 +1,7 @@
 package com.monkeyzi.mcloud.quartz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.monkeyzi.mcloud.quartz.entity.QuartzTest;
+import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
 
 /**
  * @author: 高yg
@@ -10,5 +10,5 @@ import com.monkeyzi.mcloud.quartz.entity.QuartzTest;
  * @blog http://www.monkeyzi.xin
  * @description:
  */
-public interface QuartzTestService extends IService<QuartzTest> {
+public interface McloudQuartzJobService extends IService<McloudQuartzJob> {
 }
