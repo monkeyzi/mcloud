@@ -7,5 +7,17 @@ package com.monkeyzi.mcloud.quartz.exception;
  * @blog http://www.monkeyzi.xin
  * @description:
  */
-public class McloudJobException extends RuntimeException {
+public class McloudJobException extends Exception {
+
+    public McloudJobException() {
+        super();
+    }
+
+    public McloudJobException(String msg) {
+        super(msg);
+    }
+
+    public McloudJobException(Throwable cause){
+        super(cause);
+    }
 }

@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * @date: 2019/4/14 20:49
  * @qq:854152531@qq.com
  * @blog http://www.monkeyzi.xin
- * @description:
+ * @description:主要作用是我们自定义的QuartzJobBean子类被Spring IOC进行托管，可以在定时任务类内使用注入任意被Spring IOC托管的类
  */
 public class AutowireCapableBeanJobFactory extends SpringBeanJobFactory {
 
