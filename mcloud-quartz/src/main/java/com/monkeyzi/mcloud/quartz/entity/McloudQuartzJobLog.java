@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
  * @description:
  */
 @Data
-//@TableName(value = "mcloud_quartz_job_log")
 public class McloudQuartzJobLog implements Serializable {
     private static final long serialVersionUID = -728256926320891558L;
     /**

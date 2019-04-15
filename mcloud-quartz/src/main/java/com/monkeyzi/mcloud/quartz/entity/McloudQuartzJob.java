@@ -7,7 +7,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  * @author: 高yg
@@ -17,13 +16,15 @@ import java.util.Date;
  * @description: 任务管理
  */
 @Data
-//@TableName(value = "mcloud_quartz_job")
 public class McloudQuartzJob extends Model<McloudQuartzJob> implements Serializable {
     private static final long serialVersionUID = 2049104316610649585L;
 
     @TableId
     private Integer id;
-
+    /**
+     * 任务名
+     */
+    private String jobName;
     /**
      * 任务组名
      */
