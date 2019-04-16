@@ -3,7 +3,11 @@ package com.monkeyzi.mcloud.quartz.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,7 +19,11 @@ import java.time.LocalDateTime;
  * @blog http://www.monkeyzi.xin
  * @description: 任务管理
  */
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
+@Alias(value = "mcloudQuartzJob")
 public class McloudQuartzJob extends Model<McloudQuartzJob> implements Serializable {
     private static final long serialVersionUID = 2049104316610649585L;
 

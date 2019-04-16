@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+/**
+ * job分页查询参数实体
+ */
 @Data
 public class JobPageReq extends BasePageReq implements Serializable {
 
@@ -18,5 +21,8 @@ public class JobPageReq extends BasePageReq implements Serializable {
 
     private String  jobExeStatus;
 
+    private String  startTime;
+
+    private String  endTime;
 
 }
