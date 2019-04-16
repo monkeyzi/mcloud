@@ -20,7 +20,7 @@ public class McloudQuartzJob extends Model<McloudQuartzJob> implements Serializa
     private static final long serialVersionUID = 2049104316610649585L;
 
     @TableId
-    private Integer id;
+    private Long id;
     /**
      * 任务名
      */

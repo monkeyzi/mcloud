@@ -2,6 +2,8 @@ package com.monkeyzi.mcloud.quartz.config;
 
 import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
 import com.monkeyzi.mcloud.quartz.event.McloudJobEvent;
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
 import org.quartz.Trigger;
@@ -17,11 +19,12 @@ import org.springframework.context.ApplicationEventPublisher;
  */
 @Slf4j
 @Aspect
+@AllArgsConstructor
 public class McloudQuartzInvokeFactory {
 
-    @Autowired
-    private  ApplicationEventPublisher publisher;
+    private  final ApplicationEventPublisher publisher;
 
+    @SneakyThrows
     void init(McloudQuartzJob mcloudQuartzJob, Trigger trigger) {
         publisher.publishEvent(new McloudJobEvent(mcloudQuartzJob, trigger));
     }

@@ -29,7 +29,7 @@ public class McloudInitQuartzJob {
     private final Scheduler scheduler;
 
     @Bean
-    public void init(){
+    public String customize(){
         log.info("初始化加载定时任务--------------");
         mcloudQuartzJobService.list().forEach(a->{
               if (JOB_STATUS_RELEASE.getType().equals(a.getJobStatus())){
@@ -42,5 +42,6 @@ public class McloudInitQuartzJob {
                   mcloudTaskUtils.resumeJob(a,scheduler);
               }
         });
+        return "ok";
     }
 }

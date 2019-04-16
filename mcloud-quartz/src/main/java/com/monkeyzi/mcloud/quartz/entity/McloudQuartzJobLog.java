@@ -21,11 +21,11 @@ public class McloudQuartzJobLog implements Serializable {
      * 任务日志ID
      */
     @TableId
-    private Integer id;
+    private Long id;
     /**
      * 任务id
      */
-    private Integer jobId;
+    private Long jobId;
     /**
      * 任务名称
      */
