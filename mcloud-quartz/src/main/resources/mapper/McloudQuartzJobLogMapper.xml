@@ -49,6 +49,9 @@
 		<if test="jobStatus != null and jobStatus!=''" >
 			AND ${alias}.job_log_status = #{jobStatus,jdbcType=VARCHAR}
 		</if>
+		<if test="jobId != null" >
+			AND ${alias}.job_id = #{jobId,jdbcType=INTEGER}
+		</if>
 		<if test="startTime != null and startTime != ''">
 			AND ${alias}.create_time &gt;= str_to_date(#{startTime}, '%Y-%m-%d %H')
 		</if>

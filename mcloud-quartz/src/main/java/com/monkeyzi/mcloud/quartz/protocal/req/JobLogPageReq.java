@@ -22,4 +22,6 @@ public class JobLogPageReq extends BasePageReq implements Serializable {
     private String  startTime;
 
     private String  endTime;
+
+    private Long    jobId;
 }
