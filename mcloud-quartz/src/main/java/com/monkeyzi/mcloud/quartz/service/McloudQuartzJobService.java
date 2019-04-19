@@ -34,4 +34,50 @@ public interface McloudQuartzJobService extends IService<McloudQuartzJob> {
      * @param quartzJob
      */
     R saveJob(McloudQuartzJob quartzJob);
+
+    /**
+     * 修改任务
+     * @param quartzJob
+     * @return
+     */
+    R updateJobById(McloudQuartzJob quartzJob);
+
+    /**
+     * 删除任务
+     * @param id
+     * @return
+     */
+    R removeJobById(Long id);
+
+    /**
+     * 暂停全部任务
+     * @return
+     */
+    R pauseAllJobs();
+
+    /**
+     * 启动全部任务
+     * @return
+     */
+    R startAllJobs();
+
+    /**
+     * 重置系统中所有的job,该操作请谨慎操作
+     * @return
+     */
+    R refreshAllJobs();
+
+    /**
+     * 启动某个定时任务
+     * @param id
+     * @return
+     */
+    R startJob(Long id);
+
+    /**
+     * 暂停任务
+     * @param id
+     * @return
+     */
+    R pauseJob(Long id);
 }

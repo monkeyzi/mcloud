@@ -3,6 +3,7 @@ package com.monkeyzi.mcloud.quartz.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
  * @description:
  */
 @Data
+@Alias(value = "mcloudQuartzJobLog")
 public class McloudQuartzJobLog implements Serializable {
     private static final long serialVersionUID = -728256926320891558L;
     /**

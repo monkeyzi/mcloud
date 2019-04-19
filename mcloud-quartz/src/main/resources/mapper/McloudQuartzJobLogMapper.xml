@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monkeyzi.mcloud.quartz.mapper.McloudQuartzJobLogMapper">
+	<resultMap id="ResultMap" type="mcloudQuartzJobLog">
+		<id property="id" column="id"/>
+		<result property="jobId" column="job_id"/>
+		<result property="jobName" column="job_name"/>
+		<result property="jobGroup" column="job_group"/>
+		<result property="jobOrder" column="job_order"/>
+		<result property="jobType" column="job_type"/>
+		<result property="jobExecutePath" column="job_execute_path"/>
+		<result property="jobClassName" column="job_class_name"/>
+		<result property="jobMethodName" column="job_method_name"/>
+		<result property="jobMethodParam" column="job_method_param"/>
+		<result property="jobCronExpression" column="job_cron_expression"/>
+		<result property="jobMessage" column="job_message"/>
+		<result property="jobLogStatus" column="job_log_status"/>
+		<result property="jobExecuteTime" column="job_execute_time"/>
+		<result property="createTime" column="create_time"/>
+		<result property="jobExceptionInfo" column="job_exception_info"/>
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		a.id,
+		a.job_id,
+		a.job_name,
+		a.job_group,
+		a.job_order,
+		a.job_type,
+		a.job_execute_path,
+		a.job_class_name,
+		a.job_method_name,
+		a.job_method_param,
+		a.job_cron_expression,
+		a.job_message,
+		a.job_log_status,
+		a.job_execute_time,
+		a.job_exception_info,
+		a.create_time
+	</sql>
+
+	<sql id="Base_Where_Condition" >
+		<if test="jobName != null and jobName != ''" >
+			AND ${alias}.job_name like concat("%",#{jobName,jdbcType=VARCHAR},"%")
+		</if>
+		<if test="jobGroup != null and jobGroup != ''" >
+			AND ${alias}.job_group = like concat("%",#{jobGroup,jdbcType=VARCHAR},"%")
+		</if>
+		<if test="jobStatus != null and jobStatus!=''" >
+			AND ${alias}.job_log_status = #{jobStatus,jdbcType=VARCHAR}
+		</if>
+		<if test="startTime != null and startTime != ''">
+			AND ${alias}.create_time &gt;= str_to_date(#{startTime}, '%Y-%m-%d %H')
+		</if>
+		<if test="endTime != null and endTime != ''">
+			AND ${alias}.create_time &lt;= str_to_date(#{endTime}, '%Y-%m-%d %T')
+		</if>
+	</sql>
+
+    <!--条件查询-->
+    <select id="selectJobByCondition" parameterType="com.monkeyzi.mcloud.quartz.protocal.req.JobLogPageReq" resultMap="ResultMap">
+		 SELECT
+		 <include refid="Base_Column_List"/>
+		 FROM mcloud_quartz_job_log a
+		 WHERE 1 = 1
+		 <include refid="Base_Where_Condition">
+			<property name="alias" value="a"></property>
+		 </include>
+		 ORDER BY a.create_time desc
+	</select>
+</mapper>

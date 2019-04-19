@@ -1,8 +1,10 @@
 package com.monkeyzi.mcloud.quartz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.github.pagehelper.PageInfo;
 import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
 import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJobLog;
+import com.monkeyzi.mcloud.quartz.protocal.req.JobLogPageReq;
 
 /**
  * @author: 高yg
@@ -12,4 +14,10 @@ import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJobLog;
  * @description:
  */
 public interface McloudQuartzJobLogService extends IService<McloudQuartzJobLog> {
+    /**
+     * 查询定时任务执行日志列表
+     * @param logPageReq
+     * @return
+     */
+    PageInfo getJobLogByPage(JobLogPageReq logPageReq);
 }

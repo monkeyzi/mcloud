@@ -43,17 +43,71 @@ public class McloudQuartzJobController  extends BaseController {
         return R.ok("ok",quartzJob);
     }
 
+    /**
+     * 保存job
+     * @param quartzJob
+     * @return
+     */
     @PostMapping(value = "/saveJob")
     public R saveJob(@Valid @RequestBody McloudQuartzJob quartzJob){
         log.info("新增任务的参数为 param={}",quartzJob);
         return mcloudQuartzJobService.saveJob(quartzJob);
     }
 
-
-    @PostMapping(value = "updateJob")
+    /**
+     * 更新job
+     * @param quartzJob
+     * @return
+     */
+    @PostMapping(value = "/updateJob")
     public R updateJobById(@Valid @RequestBody McloudQuartzJob quartzJob){
         log.info("修改定时任务的参数为 param={}",quartzJob);
-        return R.ok();
+        R result=mcloudQuartzJobService.updateJobById(quartzJob);
+        return result;
+    }
+
+    /**
+     * 根据任务Id删除job
+     * @param id
+     * @return
+     */
+    @DeleteMapping(value = "/removeJobById/{id}")
+    public R removeJobById(@PathVariable Long id){
+         log.info("修改定时任务的参数为 param={}",id);
+         return mcloudQuartzJobService.removeJobById(id);
+    }
+
+    /**
+     * 暂停全部job
+     * @return
+     */
+    @PostMapping(value = "/pauseAllJobs")
+    public R pauseAllJobs(){
+        log.info("暂停全部定时任务接口参数 param={}","");
+        R  result=mcloudQuartzJobService.pauseAllJobs();
+        return result;
+    }
+
+    /**
+     * 启动全部任务
+     * @return
+     */
+    @PostMapping(value = "/startAllJobs")
+    public R startAllJobs(){
+        log.info("启动全部定时任务的接口参数为 param={}","");
+        R result=mcloudQuartzJobService.startAllJobs();
+        return result;
+    }
+
+    /**
+     * 重置所有的job
+     * @return
+     */
+    @PostMapping(value = "/refreshAllJobs")
+    public R refreshAllJobs(){
+        log.info("重置所有job的接口参数为 param={}","");
+        R result=mcloudQuartzJobService.refreshAllJobs();
+        return result;
     }
 
 
@@ -71,6 +125,19 @@ public class McloudQuartzJobController  extends BaseController {
     }
 
 
+    @PostMapping(value = "/startJob/{id}")
+    public R  startJob(@PathVariable Long  id){
+        log.info("启动定时任务的参数为 param={}",id);
+        R result=mcloudQuartzJobService.startJob(id);
+        return result;
+    }
 
+
+    @PostMapping(value = "/pauseJob/{id}")
+    public R pauseJob(@PathVariable Long id){
+        log.info("暂停任务的接口的参数为 param={}",id);
+        R result=mcloudQuartzJobService.pauseJob(id);
+        return result;
+    }
 
 }
