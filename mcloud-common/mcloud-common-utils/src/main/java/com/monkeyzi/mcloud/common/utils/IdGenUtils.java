@@ -6,7 +6,7 @@ package com.monkeyzi.mcloud.common.utils;
  **/
 public class IdGenUtils {
     /**
-     * 生成一个long形的Id
+     * 生成一个long类型的Id
      * @return
      */
     public static long nextId(){
