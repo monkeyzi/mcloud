@@ -3,8 +3,10 @@ package com.monkeyzi.mcloud.quartz.config;
 import com.monkeyzi.mcloud.quartz.service.McloudQuartzJobService;
 import com.monkeyzi.mcloud.quartz.util.McloudTaskUtils;
 import lombok.AllArgsConstructor;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.Scheduler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,12 +23,15 @@ import static com.monkeyzi.mcloud.quartz.enums.McloudJobStatusEnum.JOB_STATUS_RU
  */
 @Slf4j
 @Configuration
-@AllArgsConstructor
 public class McloudInitQuartzJob {
 
-    private final McloudQuartzJobService mcloudQuartzJobService;
-    private final McloudTaskUtils mcloudTaskUtils;
-    private final Scheduler scheduler;
+    @Autowired
+    private  McloudQuartzJobService mcloudQuartzJobService;
+    @Autowired
+    private  McloudTaskUtils mcloudTaskUtils;
+    @Autowired
+    private  Scheduler scheduler;
+
 
     @Bean
     public String customize(){

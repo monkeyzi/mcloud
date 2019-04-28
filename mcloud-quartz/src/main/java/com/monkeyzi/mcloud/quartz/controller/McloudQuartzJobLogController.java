@@ -4,7 +4,6 @@ import com.github.pagehelper.PageInfo;
 import com.monkeyzi.mcloud.common.core.base.BaseController;
 import com.monkeyzi.mcloud.common.result.R;
 import com.monkeyzi.mcloud.quartz.protocal.req.JobLogPageReq;
-import com.monkeyzi.mcloud.quartz.protocal.req.JobPageReq;
 import com.monkeyzi.mcloud.quartz.service.McloudQuartzJobLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +31,7 @@ public class McloudQuartzJobLogController extends BaseController {
      * @return
      */
     @GetMapping(value = "/page")
-    public R getJobByPage(@Valid @RequestBody JobLogPageReq logPageReq){
+    public R getJobByPage(@Valid JobLogPageReq logPageReq){
         log.info("查询job日志列表的参数为 param={}",logPageReq);
         PageInfo pageInfo=mcloudQuartzJobLogService.getJobLogByPage(logPageReq);
         return R.ok("ok",pageInfo);

@@ -2,7 +2,6 @@ package com.monkeyzi.mcloud.quartz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
-import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJob;
 import com.monkeyzi.mcloud.quartz.entity.McloudQuartzJobLog;
 import com.monkeyzi.mcloud.quartz.protocal.req.JobLogPageReq;
 

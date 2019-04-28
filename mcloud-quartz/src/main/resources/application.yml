@@ -5,7 +5,7 @@ spring:
     name: mcloud-quartz
   #数据库配置
   datasource:
-    url: jdbc:mysql://59.110.171.71:3306/mcloud-quartz?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://monkeyzi:3306/mcloud-quartz?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: guoguo
     password: gao1223fengguo
     type: com.alibaba.druid.pool.DruidDataSource
@@ -51,6 +51,10 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
 
 
 #mybatis plus配置
@@ -74,5 +78,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+  type-aliases-package: com.monkeyzi.mcloud.quartz.entity
+
 
 

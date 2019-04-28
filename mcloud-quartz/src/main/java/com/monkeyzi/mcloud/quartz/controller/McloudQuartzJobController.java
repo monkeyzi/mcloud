@@ -25,7 +25,7 @@ public class McloudQuartzJobController  extends BaseController {
      * @return
      */
     @GetMapping(value = "/page")
-    public R  getJobByPage(@Valid @RequestBody JobPageReq jobPageReq){
+    public R  getJobByPage(@Valid JobPageReq jobPageReq){
         log.info("查询job列表的参数为 param={}",jobPageReq);
         PageInfo pageInfo=mcloudQuartzJobService.getJobByPage(jobPageReq);
         return R.ok("ok",pageInfo);

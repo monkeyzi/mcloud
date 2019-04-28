@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.monkeyzi.mcloud.common.core.exception.McloudGlobalExceptionHandler

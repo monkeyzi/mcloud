@@ -15,7 +15,6 @@ import com.monkeyzi.mcloud.quartz.protocal.req.JobPageReq;
 import com.monkeyzi.mcloud.quartz.service.McloudQuartzJobService;
 import com.monkeyzi.mcloud.quartz.util.McloudTaskUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.omg.CORBA.OBJECT_NOT_EXIST;
 import org.quartz.Scheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,7 +51,7 @@ public class McloudQuartzJobServiceImpl extends ServiceImpl<McloudQuartzJobMappe
         if (PublicUtil.isNotEmpty(jobPageReq.getEndTime())){
             jobPageReq.setEndTime(jobPageReq.getEndTime()+" 23:59:59");
         }
-        List<McloudQuartzJob>  list=mcloudQuartzJobMapper.selectJobByCondition(jobPageReq);
+        List<McloudQuartzJob> list=mcloudQuartzJobMapper.selectJobByCondition(jobPageReq);
         PageInfo pageInfo=new PageInfo(list);
         return pageInfo;
     }
