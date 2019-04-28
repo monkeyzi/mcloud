@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -80,5 +81,13 @@ public class HomeController {
     ){
         System.out.println(1/0);
        return  null;
+    }
+
+
+    @PostMapping(value = "/test7")
+    public List<McloudQuartzJobLog> test7(
+           @Valid @RequestBody  User user
+    ){
+        return  new ArrayList<>();
     }
 }

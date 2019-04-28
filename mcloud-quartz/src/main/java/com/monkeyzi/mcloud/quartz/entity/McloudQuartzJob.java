@@ -3,10 +3,7 @@ package com.monkeyzi.mcloud.quartz.entity;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
@@ -24,6 +21,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @Alias(value = "mcloudQuartzJob")
+@EqualsAndHashCode
 public class McloudQuartzJob extends Model<McloudQuartzJob> implements Serializable {
     private static final long serialVersionUID = 2049104316610649585L;
 
