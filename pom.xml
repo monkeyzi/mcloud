@@ -17,6 +17,7 @@
         <module>mcloud-config</module>
         <module>mcloud-quartz</module>
         <module>mcloud-msg</module>
+        <module>mcloud-auth</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

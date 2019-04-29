@@ -15,6 +15,7 @@
         <module>mcloud-common-rocketmq</module>
         <module>mcloud-common-utils</module>
         <module>mcloud-common-core</module>
+        <module>mcloud-common-security</module>
     </modules>
 
 
