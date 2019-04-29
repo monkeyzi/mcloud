@@ -23,10 +23,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
-        <!--<dependency>
+        <!--jdbc-->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>-->
+        </dependency>
         <!--mysql-->
         <dependency>
             <groupId>mysql</groupId>
