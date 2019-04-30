@@ -1,14 +1,20 @@
 package com.monkeyzi.mcloud.auth.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.monkeyzi.mcloud.auth.handler.McloudLoginSuccessHandler;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 /**
  * @author: 高yg
@@ -26,6 +32,9 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
     @Autowired
     private ClientDetailsService clientDetailsService;
 
+    @Lazy
+    @Autowired
+    private AuthorizationServerTokenServices defaultAuthorizationServerTokenServices;
 
     @Override
     @SneakyThrows
@@ -48,7 +57,14 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 .and().csrf().disable();
 
     }
-
+    @Bean
+    public AuthenticationSuccessHandler authenticationSuccessHandler() {
+        return   McloudLoginSuccessHandler.builder()
+                .objectMapper(objectMapper)
+                .clientDetailsService(clientDetailsService)
+                .passwordEncoder(passwordEncoder())
+                .defaultAuthorizationServerTokenServices(defaultAuthorizationServerTokenServices).build();
+    }
 
     @Bean
     @Override
@@ -56,4 +72,11 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
     public AuthenticationManager authenticationManagerBean() {
         return super.authenticationManagerBean();
     }
+
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
+
 }

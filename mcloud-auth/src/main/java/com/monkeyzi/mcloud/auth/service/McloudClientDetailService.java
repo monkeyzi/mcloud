@@ -1,6 +1,5 @@
 package com.monkeyzi.mcloud.auth.service;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.common.exceptions.InvalidClientException;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
@@ -14,7 +13,6 @@ import javax.sql.DataSource;
  * @blog http://www.monkeyzi.xin
  * @description:
  */
-@Configuration
 public class McloudClientDetailService extends JdbcClientDetailsService {
 
 

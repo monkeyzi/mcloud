@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/auth")
+@RequestMapping(value = "/token")
 public class AuthTokenEndpoint {
 
-     @GetMapping(value = "/test1")
+     @GetMapping(value = "/login")
      public R  Test(){
          return R.okMsg("ok");
      }

@@ -1,6 +1,10 @@
 spring:
   application:
     name: mcloud-auth
+  # redis
+  redis:
+    host: monkeyzi-redis
+    password:
   #数据库配置
   datasource:
     url: jdbc:mysql://monkeyzi:3306/mcloud-quartz?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull

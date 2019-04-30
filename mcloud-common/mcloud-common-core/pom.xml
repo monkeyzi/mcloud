@@ -28,5 +28,10 @@
              <artifactId>javax.servlet-api</artifactId>
              <version>3.1.0</version>
          </dependency>
+         <!--hutool-->
+         <dependency>
+             <groupId>cn.hutool</groupId>
+             <artifactId>hutool-all</artifactId>
+         </dependency>
      </dependencies>
 </project>
