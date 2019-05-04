@@ -6,6 +6,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 /**
  * @author: 高yg
  * @date: 2019/4/29 23:12
@@ -26,7 +28,10 @@ public class McloudUserDetailServiceImpl  implements McloudUserDetailService {
      */
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        return null;
+        String password="$2a$10$PX.0ntZY0ChfkR2KdkXG/OeR.HGvEAZTixiFteJhc.k8ULLAPzPva";
+        String BCRYPT = "{bcrypt}";
+        return new McloudUser(0,002,002,"guoguo",BCRYPT+password,true,
+                true,true,true,new ArrayList<>());
     }
 
     /**

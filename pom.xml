@@ -23,9 +23,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring-boot.version>2.0.7.RELEASE</spring-boot.version>
-        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
-        <spring-platform.version>Cairo-SR6</spring-platform.version>
+        <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
+        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <spring-platform.version>Cairo-SR7</spring-platform.version>
         <rocketmq.version>4.3.0</rocketmq.version>
         <lombok.version>1.18.6</lombok.version>
         <fastjson.version>1.2.54</fastjson.version>
@@ -33,6 +33,8 @@
         <mysql.connector.version>8.0.15</mysql.connector.version>
         <mybatis.plus.version>3.1.0</mybatis.plus.version>
         <druid.starter.version>1.1.16</druid.starter.version>
+        <security.oauth.version>2.3.5.RELEASE</security.oauth.version>
+        <security.oauth.auto.version>2.1.2.RELEASE</security.oauth.auto.version>
         <hutool.vsersion>4.5.5</hutool.vsersion>
         <pagehelper.version>1.2.10</pagehelper.version>
     </properties>
@@ -149,7 +151,17 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
-
+            <!--稳定版本，替代spring security bom内置-->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${security.oauth.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security.oauth.boot</groupId>
+                <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+                <version>${security.oauth.auto.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

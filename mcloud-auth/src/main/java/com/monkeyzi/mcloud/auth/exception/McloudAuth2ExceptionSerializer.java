@@ -12,8 +12,8 @@ import lombok.SneakyThrows;
 public class McloudAuth2ExceptionSerializer extends StdSerializer<McloudAuth2Exception> {
 
 
-    protected McloudAuth2ExceptionSerializer(Class<McloudAuth2Exception> t) {
-        super(t);
+    protected McloudAuth2ExceptionSerializer() {
+        super(McloudAuth2Exception.class);
     }
 
     @Override
