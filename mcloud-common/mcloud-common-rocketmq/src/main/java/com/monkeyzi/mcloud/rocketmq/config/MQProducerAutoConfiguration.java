@@ -67,7 +67,7 @@ public class MQProducerAutoConfiguration  extends MQBaseAutoConfiguration{
 
 
     @PostConstruct
-    public void initTranscationProoducer(){
+    public void initTransactionProducer(){
         Map<String,Object> beans=applicationContext.getBeansWithAnnotation(MQTransactionProducer.class);
         if (CollectionUtils.isEmpty(beans)){
             return;
