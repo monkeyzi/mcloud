@@ -30,16 +30,16 @@
             <artifactId>mcloud-common-rocketmq</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--mysql-->
+       <!-- &lt;!&ndash;mysql&ndash;&gt;
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--mybatis plus-->
+        &lt;!&ndash;mybatis plus&ndash;&gt;
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
