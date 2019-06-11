@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RocketMQConsumer(consumerGroup = "my-producer-group",topic = "hello",tag = "order",consumeMode = ConsumeMode.ORDERLY)
+@RocketMQConsumer(consumerGroup = "ttt",topic = "quick_topic",tag = "*",consumeMode = ConsumeMode.ORDERLY)
 public class Hello  extends AbsMQPushConsumer<String> {
 
     @Autowired

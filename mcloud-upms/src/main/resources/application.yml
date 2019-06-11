@@ -1,7 +1,7 @@
 
 spring:
   rocketmq:
-    name-server-address: 127.0.0.1:9876
+    name-server-address: 192.168.124.18:9876;192.168.192.19:9876
     producer:
       producer-group: my-producer-group
       vip-channel-enabled: false
