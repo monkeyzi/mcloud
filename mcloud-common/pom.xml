@@ -16,6 +16,7 @@
         <module>mcloud-common-utils</module>
         <module>mcloud-common-core</module>
         <module>mcloud-common-security</module>
+        <module>mcloud-commom-redis-starter</module>
     </modules>
 
 
