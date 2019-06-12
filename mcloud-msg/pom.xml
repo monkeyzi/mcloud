@@ -13,6 +13,7 @@
     <description>消息管理</description>
 
     <dependencies>
+        <!--核心，模块-->
         <dependency>
             <groupId>com.monkeyzi.mcloud</groupId>
             <artifactId>mcloud-common-core</artifactId>

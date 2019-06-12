@@ -12,7 +12,7 @@ import java.util.List;
  */
 @Getter
 @Setter
-@ConfigurationProperties(prefix = "mcloud-redis-cache")
+@ConfigurationProperties(prefix = "mcloud.controller-cache")
 public class RedisCacheProperties {
 
     private List<RedisCacheConfig> redisCacheConfigs;

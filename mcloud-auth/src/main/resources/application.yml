@@ -1,9 +1,9 @@
 spring:
   application:
     name: mcloud-auth
-  # redis
+  # controller
   redis:
-    host: monkeyzi-redis
+    host: monkeyzi-controller
     password: 1223gao
   #数据库配置
   datasource:
