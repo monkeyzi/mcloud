@@ -24,7 +24,7 @@ spring:
   #controller
   redis:
     host: 127.0.0.1
-    password:
+    password: 1223gao
     timeout: 5000ms
 
 

@@ -1,5 +1,6 @@
 package com.monkeyzi.mcloud.common.redis.configuration;
 
+import com.monkeyzi.mcloud.common.redis.lock.RedisDistributedLock;
 import com.monkeyzi.mcloud.common.redis.properties.RedisCacheProperties;
 import com.monkeyzi.mcloud.common.redis.template.McloudRedisTemplate;
 import lombok.extern.slf4j.Slf4j;
@@ -46,6 +47,12 @@ public class RedisAutoConfiguration {
     @ConditionalOnMissingBean
     public McloudRedisTemplate mcloudRedisTemplate(RedisTemplate<String,Object> redisTemplate){
         return new McloudRedisTemplate(redisTemplate);
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public RedisDistributedLock redisDistributedLock(RedisTemplate<String,Object> redisTemplate){
+        return new RedisDistributedLock(redisTemplate);
     }
 
 }

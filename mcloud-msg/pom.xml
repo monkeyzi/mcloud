@@ -16,7 +16,7 @@
         <!--核心，模块-->
         <dependency>
             <groupId>com.monkeyzi.mcloud</groupId>
-            <artifactId>mcloud-common-core</artifactId>
+            <artifactId>mcloud-commom-redis-starter</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--undertow容器-->
