@@ -230,7 +230,7 @@ public class McloudRedisTemplate {
      * @return the keys values
      */
     public Map<String, Object> getKeysValues(final String keyPatten) {
-        log.debug("[redisTemplate controller]  getValues()  patten={} ", keyPatten);
+        log.debug("[redisTemplate cache]  getValues()  patten={} ", keyPatten);
         return redisTemplate.execute((RedisCallback<Map<String, Object>>) connection -> {
             RedisSerializer<String> serializer = getRedisSerializer();
             Map<String, Object> maps = new HashMap<>(16);

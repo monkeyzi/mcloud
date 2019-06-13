@@ -142,6 +142,6 @@ public class McloudGlobalExceptionHandler {
 
         log.info("uri={},method={},exceptionType={}",uri,method,exceptionType);
         log.error("全局异常信息 ex={}", e.getMessage(), e);
-        return R.error(500,"服务异常");
+        return R.error(500,"哎呀，接口开小差了！");
     }
 }
