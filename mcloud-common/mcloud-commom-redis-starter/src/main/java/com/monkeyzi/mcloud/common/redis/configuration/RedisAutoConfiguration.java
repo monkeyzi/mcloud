@@ -1,9 +1,11 @@
 package com.monkeyzi.mcloud.common.redis.configuration;
 
 import com.monkeyzi.mcloud.common.redis.lock.RedisDistributedLock;
+import com.monkeyzi.mcloud.common.redis.lock.RedissonDistributedLock;
 import com.monkeyzi.mcloud.common.redis.properties.RedisCacheProperties;
 import com.monkeyzi.mcloud.common.redis.template.McloudRedisTemplate;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -54,5 +56,9 @@ public class RedisAutoConfiguration {
     public RedisDistributedLock redisDistributedLock(RedisTemplate<String,Object> redisTemplate){
         return new RedisDistributedLock(redisTemplate);
     }
-
+    @Bean
+    @ConditionalOnMissingBean
+    public RedissonDistributedLock redissonDistributedLock(RedissonClient client){
+        return new RedissonDistributedLock(client);
+    }
 }

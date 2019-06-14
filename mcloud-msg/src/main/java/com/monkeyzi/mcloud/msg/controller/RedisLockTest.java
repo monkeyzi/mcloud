@@ -3,6 +3,8 @@ package com.monkeyzi.mcloud.msg.controller;
 import cn.hutool.http.HttpUtil;
 import com.monkeyzi.mcloud.common.core.lock.DistributedLock;
 import com.monkeyzi.mcloud.common.redis.lock.RedisDistributedLock;
+import com.monkeyzi.mcloud.common.redis.lock.RedissonDistributedLock;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +31,9 @@ public class RedisLockTest {
 
     @Resource
     private RedisDistributedLock redisDistributedLock;
+
+    @Autowired
+    private RedissonDistributedLock lock;
 
 
 
@@ -70,6 +75,11 @@ public class RedisLockTest {
         }
         executorService.shutdown();
 
+    }
+
+    @GetMapping(value = "/kk")
+    public void  tt(){
+        lock.lock("guoguo");
     }
 
 }
