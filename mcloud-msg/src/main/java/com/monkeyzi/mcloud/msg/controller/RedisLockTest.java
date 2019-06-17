@@ -5,6 +5,7 @@ import com.monkeyzi.mcloud.common.core.lock.DistributedLock;
 import com.monkeyzi.mcloud.common.redis.lock.RedisDistributedLock;
 import com.monkeyzi.mcloud.common.redis.lock.RedissonDistributedLock;
 import jdk.nashorn.internal.objects.annotations.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,17 +24,20 @@ import java.util.concurrent.Executors;
  * @description:
  */
 @RestController
+@Slf4j
 public class RedisLockTest {
 
-    private static  final ExecutorService  executorService=Executors.newFixedThreadPool(100);
+    private static  final ExecutorService  executorService=Executors.newFixedThreadPool(10);
 
-    private static final CyclicBarrier cyclicBarrier=new CyclicBarrier(100);
+    private static final CyclicBarrier cyclicBarrier=new CyclicBarrier(10);
 
     @Resource
     private RedisDistributedLock redisDistributedLock;
 
     @Autowired
     private RedissonDistributedLock lock;
+
+
 
 
 
@@ -60,12 +64,12 @@ public class RedisLockTest {
     }
 
     public static void main(String[] args) {
-        for (int i=0;i<100;i++){
+        for (int i=0;i<10;i++){
             executorService.execute(()->{
                 System.out.println(Thread.currentThread().getName()+"竹北");
                 try {
                     cyclicBarrier.await();
-                   HttpUtil.get("http://127.0.0.1:8084/lock");
+                   HttpUtil.get("http://127.0.0.1:8084/redisson");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } catch (BrokenBarrierException e) {
@@ -77,9 +81,23 @@ public class RedisLockTest {
 
     }
 
-    @GetMapping(value = "/kk")
-    public void  tt(){
-        lock.lock("guoguo");
+
+
+    @GetMapping(value = "redisson")
+    public void  test(){
+        String  key="mmmm";
+        try {
+            lock.lock(key);
+            log.info(Thread.currentThread().getName()+"lock--正在执行任务");
+            Thread.sleep(1000);
+        }catch (Exception e){
+             e.printStackTrace();
+        }finally {
+            lock.releaseLock(key);
+            log.info(Thread.currentThread().getName()+"释放锁");
+        }
+
+
     }
 
 }

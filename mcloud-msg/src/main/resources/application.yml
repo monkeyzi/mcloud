@@ -23,9 +23,25 @@ spring:
         deny:
   #controller
   redis:
-    host: 127.0.0.1
-    password:
     timeout: 5000ms
+    port: 6379
+    database: 0
+    #连接池配置
+    jedis:
+      pool:
+        min-idle: 8
+        max-idle: 16
+        max-active: 8
+        max-wait: 5000ms
+    host: 127.0.0.1
+    password: 1223gao
+    #模式  sentinel/cluster/single
+
+
+
+
+
+
 
 
 server:

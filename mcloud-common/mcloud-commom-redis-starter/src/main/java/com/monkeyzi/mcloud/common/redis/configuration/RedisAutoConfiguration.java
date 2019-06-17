@@ -56,9 +56,5 @@ public class RedisAutoConfiguration {
     public RedisDistributedLock redisDistributedLock(RedisTemplate<String,Object> redisTemplate){
         return new RedisDistributedLock(redisTemplate);
     }
-    @Bean
-    @ConditionalOnMissingBean
-    public RedissonDistributedLock redissonDistributedLock(RedissonClient client){
-        return new RedissonDistributedLock(client);
-    }
+
 }

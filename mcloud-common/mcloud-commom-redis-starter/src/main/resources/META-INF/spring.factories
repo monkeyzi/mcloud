@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.monkeyzi.mcloud.common.redis.configuration.RedisAutoConfiguration
+  com.monkeyzi.mcloud.common.redis.configuration.RedisAutoConfiguration,\
+  com.monkeyzi.mcloud.common.redis.configuration.RedissonAutoConfiguration
