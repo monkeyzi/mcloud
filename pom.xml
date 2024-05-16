@@ -35,7 +35,7 @@
         <druid.starter.version>1.1.16</druid.starter.version>
         <security.oauth.version>2.3.5.RELEASE</security.oauth.version>
         <security.oauth.auto.version>2.1.2.RELEASE</security.oauth.auto.version>
-        <hutool.vsersion>4.5.5</hutool.vsersion>
+        <hutool.vsersion>5.8.21</hutool.vsersion>
         <pagehelper.version>1.2.10</pagehelper.version>
     </properties>
 
