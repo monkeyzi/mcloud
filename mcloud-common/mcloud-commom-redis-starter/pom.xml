@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
-            <version>3.11.0</version>
+            <version>3.22.0</version>
         </dependency>
         <!-- springboot2.x 之后 jedis依赖包-->
         <dependency>
